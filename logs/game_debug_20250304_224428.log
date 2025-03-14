@@ -1,0 +1,29 @@
+
+==================================================
+Time: 2025-03-04 22:44:30
+Error Type: AttributeError
+Message: 'Bullet' object has no attribute 'add_internal'
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\river\AppData\Roaming\Python\Python313\site-packages\pygame\sprite.py", line 466, in add
+    self.add(*sprite)
+    ~~~~~~~~^^^^^^^^^
+TypeError: pygame.sprite.AbstractGroup.add() argument after * must be an iterable, not Bullet
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\K3abyshWar\Game 1.0\main.py", line 45, in main
+    game.handle_playing_input(event)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "d:\K3abyshWar\Game 1.0\game.py", line 116, in handle_playing_input
+    self.player.shoot(pygame.mouse.get_pos())
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\K3abyshWar\Game 1.0\entities\player.py", line 117, in shoot
+    self.bullets.add(bullet)
+    ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\river\AppData\Roaming\Python\Python313\site-packages\pygame\sprite.py", line 479, in add
+    sprite.add_internal(self)
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Bullet' object has no attribute 'add_internal'
+

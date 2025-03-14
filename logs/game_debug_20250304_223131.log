@@ -1,0 +1,15 @@
+
+==================================================
+Time: 2025-03-04 22:31:33
+Error Type: TypeError
+Message: Player.shoot() takes 1 positional argument but 2 were given
+Traceback:
+Traceback (most recent call last):
+  File "d:\K3abyshWar\Game 1.0\main.py", line 54, in main
+    game.handle_playing_input(event)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "d:\K3abyshWar\Game 1.0\game.py", line 116, in handle_playing_input
+    self.player.shoot(pygame.mouse.get_pos())
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Player.shoot() takes 1 positional argument but 2 were given
+

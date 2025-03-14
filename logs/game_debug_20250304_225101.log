@@ -1,0 +1,15 @@
+
+==================================================
+Time: 2025-03-04 22:51:02
+Error Type: AttributeError
+Message: 'Game' object has no attribute 'clock'
+Traceback:
+Traceback (most recent call last):
+  File "d:\K3abyshWar\Game 1.0\main.py", line 56, in main
+    game.update_game()
+    ~~~~~~~~~~~~~~~~^^
+  File "d:\K3abyshWar\Game 1.0\game.py", line 125, in update_game
+    dt = self.clock.get_time() / 1000.0  # Delta time in seconds
+         ^^^^^^^^^^
+AttributeError: 'Game' object has no attribute 'clock'
+

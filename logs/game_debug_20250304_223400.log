@@ -1,0 +1,18 @@
+
+==================================================
+Time: 2025-03-04 22:34:02
+Error Type: NameError
+Message: name 'Bullet' is not defined
+Traceback:
+Traceback (most recent call last):
+  File "d:\K3abyshWar\Game 1.0\main.py", line 54, in main
+    game.handle_playing_input(event)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "d:\K3abyshWar\Game 1.0\game.py", line 116, in handle_playing_input
+    self.player.shoot(pygame.mouse.get_pos())
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\K3abyshWar\Game 1.0\entities\player.py", line 112, in shoot
+    bullet = Bullet(self.rect.centerx, self.rect.centery, dx, dy, self.damage)
+             ^^^^^^
+NameError: name 'Bullet' is not defined
+
